@@ -1,0 +1,98 @@
+
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 100;
+	font-size: 1.35em;
+   -webkit-transition: height 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+	transition: height 0.2s, opacity 0.2s, transform 0.2s;
+	-webkit-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	    transform: translateY(10px);
+font-family: 'Open Sans', sans-serif;
+}
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.effect a {
+padding: 0 0 10px;
+}
+.effect a::after {
+	position: absolute;
+	top: 83%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.2s, opacity 0.2s, -webkit-transform 0.2s;
+	transition: height 0.2s, opacity 0.2s, transform 0.2s;
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	    transform: translateY(-5px);
+}
+.effect a:hover::after,
+.effect a:focus::after {
+	height: 1px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	    transform: translateY(0px);
+}
+.container > section {
+	margin: auto;
+    width: 8em;
+	padding: 1em;
+    text-align: center;
+    position:fixed;
+    position: static;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+border-bottom-right-radius:2em; 
+}
+.container {
+margin: 0 auto;
+    width: 0%;
+    text-align: center;
+    position:fixed;
+      -webkit-transition:all 0.4s;
+	transition:all 0.4s;
+-webkit-transform: translateY(-24.5em);
+	-ms-transform: translateY(-24.5em);
+    transform: translateY(-24.5em);
+ }/*4=18.5em 5=21.5*/
+.container:hover {
+
+	-webkit-transform: translateY(0em);
+	-ms-transform: translateY(0em);
+	    transform: translateY(0em);
+}
+.color {
+	background: rgba(15, 15, 15, 0.4);
+}
+p.menu {
+	display: inline-block;
+	margin: 1px 1px;
+    color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 100;
+	font-size: 1.35em;
+    -webkit-transition: all 0.1s;
+	transition: all 0.4s;
+	-webkit-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	    transform: translateY(10px);
+font-family: 'Open Sans', sans-serif;
+}
+.color:hover .menu  {
+    opacity: 0;
+    
+}
